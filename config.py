@@ -10,22 +10,22 @@ import os
 from logging.handlers import RotatingFileHandler
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5926298542:AAGCaRnjTRa8lLXa7iDhgPuMd2V1oyU40o8")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6219307802:AAFA9Qt80z9m1rJ-UWa2a4_TKMtBeNbPe6E")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "13663693"))
+APP_ID = int(os.environ.get("APP_ID", "28220146"))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "1f93516405fced4f28ada0f2e1496d40")
+API_HASH = os.environ.get("API_HASH", "1d1e1da63ea443b083df5b69d084f82f")
 
 # ID Channel Database
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001615531278"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5029255799"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1857312697"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "Tytydaj")
+OWNER = os.environ.get("OWNER", "banned_007")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "postgres://zprwfjam:pcNPyft1A8_Xh_u8-3tafg9r11Z74fFm@peanut.db.elephantsql.com/zprwfjam")
@@ -35,8 +35,8 @@ CHANNEL = os.environ.get("CHANNEL", "")
 GROUP = os.environ.get("GROUP", "")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001597906476"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001550386487"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001943107246"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001787476305"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -46,7 +46,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5029255799 2013745499").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5881804761").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
